@@ -61,6 +61,7 @@ metadata:
   name: efs
   annotations:
     volume.beta.kubernetes.io/storage-class: "aws-efs"
+    volume.beta.kubernetes.io/storage-provisioner: "kubernetes.io/aws-efs"
 spec:
   accessModes:
     - ReadWriteMany
